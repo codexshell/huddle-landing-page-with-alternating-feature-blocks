@@ -1,0 +1,12 @@
+---
+import contacts from "../data/contacts";
+import Contact from "./Contact.astro";
+---
+
+<div>
+  {
+    contacts.map(({ img, description }) => (
+      <Contact img={img} description={description} />
+    ))
+  }
+</div>

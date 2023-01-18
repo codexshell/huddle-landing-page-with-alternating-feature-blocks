@@ -1,0 +1,31 @@
+---
+import logo from "../assets/logo.svg";
+import Contacts from "./Contacts.astro";
+import SocialIcons from "./SocialIcons.astro";
+
+const date = new Date().getFullYear();
+---
+
+<footer>
+  <div>
+    <div><img src={logo} alt="" /></div>
+    <Contacts />
+  </div>
+
+  <div>
+    <span>About Us</span>
+    <span>What We Do</span>
+    <span>FAQ</span>
+  </div>
+
+  <div>
+    <span>Career</span>
+    <span>Blog</span>
+    <span>Contact Us</span>
+  </div>
+
+  <div>
+    <SocialIcons />
+    <p>&copy; Copyright {date} Huddle. All rights reserved.</p>
+  </div>
+</footer>

@@ -1,0 +1,12 @@
+---
+import features from "../data/features";
+import Feature from "./Feature.astro";
+---
+
+<div>
+  {
+    features.map(({ title, description, img }) => (
+      <Feature title={title} description={description} img={img} />
+    ))
+  }
+</div>
