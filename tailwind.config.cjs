@@ -16,6 +16,9 @@ module.exports = {
         body: ["Open Sans", "sans-serif"],
         headings: ["Poppins", "sans-serif"],
       },
+      backgroundImage: {
+        "mobile-hero-bg": "url('/src/assets/bg-hero-mobile.svg')",
+      },
     },
   },
   plugins: [],
