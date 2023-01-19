@@ -2,12 +2,12 @@
 const { title, description, img } = Astro.props;
 ---
 
-<div>
+<div class="shadow-md rounded-2xl text-center px-6 pt-16 pb-10">
   <div>
     <img src={img} alt="" />
   </div>
   <div>
-    <h2>{title}</h2>
-    <p>{description}</p>
+    <h2 class="font-headings text-xl mt-12">{title}</h2>
+    <p class="text-sm text-brand-blue mt-4">{description}</p>
   </div>
 </div>
