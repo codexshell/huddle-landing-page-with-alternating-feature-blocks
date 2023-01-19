@@ -6,26 +6,30 @@ import SocialIcons from "./SocialIcons.astro";
 const date = new Date().getFullYear();
 ---
 
-<footer>
+<footer class="pt-48 px-6 pb-10 bg-brand-cyan-2 text-white">
   <div>
-    <div><img src={logo} alt="" /></div>
-    <Contacts />
+    <div class="max-w-[160px]">
+      <img class="contrast-0" src={logo} alt="" />
+    </div>
+    <div class="mt-8">
+      <Contacts />
+    </div>
   </div>
 
-  <div>
+  <div class="flex flex-col gap-4 mt-12">
     <span>About Us</span>
     <span>What We Do</span>
     <span>FAQ</span>
   </div>
 
-  <div>
+  <div class="flex flex-col gap-4 mt-4">
     <span>Career</span>
     <span>Blog</span>
     <span>Contact Us</span>
   </div>
 
-  <div>
+  <div class="mt-16 flex flex-col justify-center items-center">
     <SocialIcons />
-    <p>&copy; Copyright {date} Huddle. All rights reserved.</p>
+    <p class="text-xs mt-6">&copy; Copyright {date} Huddle. All rights reserved.</p>
   </div>
 </footer>

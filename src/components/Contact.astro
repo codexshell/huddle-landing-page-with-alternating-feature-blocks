@@ -2,7 +2,7 @@
 const { img, description } = Astro.props;
 ---
 
-<div>
-  <div><img src={img} alt="" /></div>
+<div class="flex">
+  <div class="min-w-fit mt-2 mr-5"><img src={img} alt="" /></div>
   <p>{description}</p>
 </div>
