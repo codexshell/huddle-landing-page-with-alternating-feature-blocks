@@ -3,7 +3,7 @@ import features from "../data/features";
 import Feature from "./Feature.astro";
 ---
 
-<div class="px-8 pt-16 flex flex-col gap-10">
+<div class="px-8 sm:px-28 pt-16 flex flex-col gap-10 sm:gap-14">
   {
     features.map(({ title, description, img }) => (
       <Feature title={title} description={description} img={img} />
