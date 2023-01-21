@@ -6,23 +6,23 @@ import SocialIcons from "./SocialIcons.astro";
 const date = new Date().getFullYear();
 ---
 
-<footer class="pt-48 px-6 pb-10 bg-brand-cyan-2 text-white">
+<footer class="pt-48 sm:pt-52 px-6 sm:px-12 pb-10 sm:pb-14 bg-brand-cyan-2 text-white">
   <div>
-    <div class="max-w-[160px]">
+    <div class="max-w-[160px] sm:max-w-[200px]">
       <img class="contrast-0" src={logo} alt="" />
     </div>
-    <div class="mt-8">
+    <div class="mt-8 sm:mt-16">
       <Contacts />
     </div>
   </div>
 
-  <div class="flex flex-col gap-4 mt-12">
+  <div class="flex flex-col gap-4 mt-12 sm:mt-16">
     <span>About Us</span>
     <span>What We Do</span>
     <span>FAQ</span>
   </div>
 
-  <div class="flex flex-col gap-4 mt-4">
+  <div class="flex flex-col gap-4 mt-4 sm:mt-8">
     <span>Career</span>
     <span>Blog</span>
     <span>Contact Us</span>
