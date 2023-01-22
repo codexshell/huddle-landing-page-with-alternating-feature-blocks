@@ -16,7 +16,8 @@
 				"yzhang.markdown-all-in-one",
 				"kisstkondoros.vscode-gutter-preview",
 				"astro-build.astro-vscode",
-				"bradlc.vscode-tailwindcss"
+				"bradlc.vscode-tailwindcss",
+				"ms-edgedevtools.vscode-edge-devtools"
 			]
 		}
 	}
