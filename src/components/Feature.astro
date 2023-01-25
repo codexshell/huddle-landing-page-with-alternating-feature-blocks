@@ -1,14 +1,17 @@
 ---
-const { title, description, img } = Astro.props;
+const { title, description, img, index } = Astro.props;
 const formattedDesc = description.join(" ");
 ---
 
-<div class="shadow-lg rounded-2xl text-center px-8 sm:px-12 md:px-20 pt-16 sm:pt-20 pb-10 sm:pb-14 md:pb-16 lg:pb-20">
-  <div>
+<div
+  class="shadow-lg rounded-2xl text-center px-8 sm:px-12 md:px-20 pt-16 sm:pt-20 pb-10 sm:pb-14 md:pb-16 lg:pb-20 xl:flex xl:p-16 xl:text-start"
+>
+  <div class:list={{ "order-1": index % 2 === 0 }}>
     <img src={img} alt="" />
   </div>
-  <div>
-    <h2 class="font-headings text-xl mt-12">{title}</h2>
-    <p class="text-sm text-brand-blue mt-4">{formattedDesc}</p>
+
+  <div class="self-center mt-12 xl:mt-0 xl:px-10">
+    <h2 class="font-headings text-xl xl:text-3xl">{title}</h2>
+    <p class="text-sm text-brand-blue mt-4 xl:text-lg">{formattedDesc}</p>
   </div>
 </div>

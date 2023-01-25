@@ -3,10 +3,17 @@ import features from "../data/features";
 import Feature from "./Feature.astro";
 ---
 
-<div class="px-8 sm:px-28 lg:px-56 pt-16 flex flex-col gap-10 sm:gap-14">
+<div
+  class="px-8 sm:px-28 lg:px-56 pt-16 flex flex-col gap-10 sm:gap-14 xl:px-28"
+>
   {
-    features.map(({ title, description, img }) => (
-      <Feature title={title} description={description} img={img} />
+    features.map(({ title, description, img }, index) => (
+      <Feature
+        title={title}
+        description={description}
+        img={img}
+        index={index}
+      />
     ))
   }
 </div>
