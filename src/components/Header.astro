@@ -4,12 +4,12 @@ import Button from "./Button.astro";
 import Hero from "./Hero.astro";
 ---
 
-<header class="pt-8 sm:pt-12 md:pt-16 lg:pt-20 pb-10 md:pb-14 lg:pb-20 bg-brand-cyan-1 bg-mobile-hero-bg bg-no-repeat bg-cover">
+<header class="pt-8 sm:pt-12 md:pt-16 lg:pt-20 pb-10 md:pb-14 lg:pb-20 bg-brand-cyan-1 bg-mobile-hero-bg xl:bg-desktop-hero-bg bg-center bg-no-repeat bg-cover">
   <div class="px-6 sm:px-10 md:px-14 lg:px-20 flex justify-between items-center">
-    <div class="max-w-[110px] sm:max-w-[155px]"><img src={logo} alt="" /></div>
+    <div class="max-w-[110px] sm:max-w-[155px] xl:max-w-[200px]"><img src={logo} alt="" /></div>
     <Button text="Try It Free" />
   </div>
-  <div class="mt-16 px-4 sm:px-6 md:px-24 lg:px-36">
+  <div class="mt-16 px-4 sm:px-6 md:px-24 lg:px-36 xl:px-20">
     <Hero />
   </div>
 </header>
