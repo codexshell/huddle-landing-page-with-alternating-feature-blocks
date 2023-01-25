@@ -18,7 +18,10 @@ module.exports = {
       },
       backgroundImage: {
         "mobile-hero-bg": "url('/src/assets/bg-hero-mobile.svg')",
-        "desktop-hero-bg": "url('/src/assets/bg-hero-desktop.svg')"
+        "desktop-hero-bg": "url('/src/assets/bg-hero-desktop.svg')",
+      },
+      screens: {
+        "2xl": "1440px",
       },
     },
   },
