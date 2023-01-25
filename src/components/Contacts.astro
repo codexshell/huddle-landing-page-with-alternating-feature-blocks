@@ -3,7 +3,7 @@ import contacts from "../data/contacts";
 import Contact from "./Contact.astro";
 ---
 
-<div class="flex flex-col gap-10">
+<div class="flex flex-col gap-8">
   {
     contacts.map(({ img, description }) => (
       <Contact img={img} description={description} />
